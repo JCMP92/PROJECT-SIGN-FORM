@@ -32,10 +32,61 @@ body .main-container {
   align-self: center;
 }
 .img-logo-container h1 {
-  font-family: "Gruppo", cursive;
+  font-family: "Gruppo", cursive, sans-serif;
   font-size: 45px;
   color: white;
   align-self: center;
+}
+
+.forms-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.forms-container .highlight {
+  color: #8bb8f7;
+}
+
+form {
+  border: solid #8bb8f7;
+}
+form .input-containers {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  border: none;
+}
+
+fieldset div {
+  align-self: center;
+}
+
+input {
+  width: 400px;
+}
+
+.log-submit {
+  margin-top: 30px;
+}
+.log-submit button {
+  background-color: #8bb8f7;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  color: white;
+}
+.log-submit button:hover {
+  background-color: #4669e2;
+  transform: scale(1.1);
+}
+.log-submit a {
+  color: #8bb8f7;
+}
+.log-submit a:hover {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

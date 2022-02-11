@@ -34,9 +34,62 @@ body{
         align-self: center;
     }
     h1{
-        font-family: 'Gruppo', cursive;
+        font-family: 'Gruppo', cursive, sans-serif;
         font-size: 45px;
         color: vari.$primary-color;
         align-self: center;
+    }
+}
+
+.forms-container{
+    background-color: vari.$primary-background;
+    color: vari.$primary-color;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    .highlight{
+        color: vari.$highlight-color;
+    }
+}
+
+form{
+    border: solid vari.$highlight-color;
+
+    .input-containers{
+        display: flex;
+        justify-content: space-evenly;
+        height: 80px;
+        border: none;
+    }
+}
+fieldset{
+    div{
+        align-self: center;  
+    }
+}
+input{
+    width: 400px;
+}
+
+.log-submit{
+    margin-top: 30px;
+
+    button{
+        background-color: vari.$highlight-color;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        color: vari.$primary-color;
+    }
+    button:hover{
+        background-color: vari.$hov-color;
+        transform: scale(1.1);
+    }
+    a{
+        color: vari.$highlight-color;  
+    }
+    a:hover{
+        color: red;
     }
 }
