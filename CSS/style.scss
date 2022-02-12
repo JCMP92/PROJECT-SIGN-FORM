@@ -1,4 +1,5 @@
 @use 'vari';
+@use 'mediaquery';
 body{
     display: flex;
     height: 100vh;
@@ -25,7 +26,7 @@ body{
     align-self: center;
     justify-content: center;
     background-color: vari.$primary-background;
-    width: 1000px;
+    width: 30vw;
     height: 150px;
 
     .logo-img{
@@ -44,6 +45,7 @@ body{
 .forms-container{
     background-color: vari.$primary-background;
     color: vari.$primary-color;
+    width: 50vw;
     padding: 30px;
     font-family: 'Montserrat', sans-serif;
     border-top-right-radius: 20px;
@@ -69,7 +71,7 @@ fieldset{
     }
 }
 input{
-    width: 400px;
+    width: 21vw;
 }
 
 .log-submit{
@@ -89,6 +91,19 @@ input{
     a{
         color: vari.$highlight-color;  
     }
+    a:hover{
+        color: red;
+    }
+}
+
+.page-end{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    font-family: 'Gruppo', cursive, sans-serif;
     a:hover{
         color: red;
     }
