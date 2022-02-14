@@ -4,12 +4,12 @@ body {
   width: 100vw;
   align-content: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 15px;
 }
 body .main-container {
   display: flex;
   align-self: center;
-  background-image: url(/IMAGES/coral-3202725.jpg);
+  background-image: url(../IMAGES/coral-3202725.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
