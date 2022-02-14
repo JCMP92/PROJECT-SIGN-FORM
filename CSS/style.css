@@ -69,6 +69,7 @@ fieldset div {
 
 input {
   width: 21vw;
+  background-color: white;
 }
 
 .log-submit {
