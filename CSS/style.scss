@@ -123,9 +123,6 @@ input{
             height: 50px;
         }
     }
-      h2 {
-        font-size: 20px;
-      }
 
     .forms-container{
     padding: 20px;
@@ -165,12 +162,18 @@ input{
 
     .img-logo-container{
         width: 100vw;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    h2{
+        font-size: 15px;
     }
     .forms-container{
         align-self: center;
         width: 100vw;
         border-top-right-radius: 0;
-        border-bottom-right-radius: none;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         padding: 0;
     }
     form{
@@ -191,5 +194,14 @@ input{
     .page-end{
         position:relative;
         margin-top: 30px;
+    }
+}
+
+@media (max-height: 700px){
+    h2{
+        font-size: 12px;
+    }
+    .log-submit{
+        margin-top: 15px;
     }
 }
