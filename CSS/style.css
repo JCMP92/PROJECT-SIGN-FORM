@@ -137,7 +137,7 @@ input {
     display: flex;
     align-self: center;
     flex-direction: column;
-    background-image: url(/IMAGES/coral-3202725.jpg);
+    background-image: url(../IMAGES/coral-3202725.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,6 +184,10 @@ input {
   }
 }
 @media (max-height: 700px) {
+  body {
+    font-size: 12px;
+  }
+
   h2 {
     font-size: 12px;
   }
