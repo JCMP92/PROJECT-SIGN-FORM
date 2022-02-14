@@ -1,11 +1,12 @@
 @use 'vari';
-@use 'mediaquery';
+
 body{
     display: flex;
     height: 100vh;
     width: 100vw;
     align-content: center;
     justify-content: center;
+    font-size: 12px;
 
     .main-container{
         display: flex;
@@ -61,8 +62,9 @@ form{
     .input-containers{
         display: flex;
         justify-content: space-evenly;
-        height: 80px;
+        height: 70px;
         border: none;
+        padding: 0;
     }
 }
 fieldset{
@@ -106,5 +108,88 @@ input{
     font-family: 'Gruppo', cursive, sans-serif;
     a:hover{
         color: red;
+    }
+}
+
+//WIDTH MEDIA QUERIES
+
+@media (max-width: 1280px){
+    .img-logo-container{
+        h1 {
+            font-size: 35px;
+        }
+        .logo-img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+      h2 {
+        font-size: 20px;
+      }
+
+    .forms-container{
+    padding: 20px;
+    }
+    form{
+        .input-containers{
+            height: 65px;
+        }
+    }
+}
+
+
+@media (max-width: 780px){
+    body{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        align-content: center;
+        justify-content: center;
+        border-radius: none;
+        text-align: center;
+    
+        .main-container{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            background-image: url(/IMAGES/coral-3202725.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: none;
+            width: 100vw;
+            height: auto;
+        }
+    }
+
+    .img-logo-container{
+        width: 100vw;
+    }
+    .forms-container{
+        align-self: center;
+        width: 100vw;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: none;
+        padding: 0;
+    }
+    form{
+        .input-containers{
+            flex-direction: column;
+            height: 80px;
+        }
+    }
+    fieldset{
+        div{
+            text-align: left; 
+        }
+    }
+    input{
+        width: 70vw;
+    }
+
+    .page-end{
+        position:relative;
+        margin-top: 30px;
     }
 }
